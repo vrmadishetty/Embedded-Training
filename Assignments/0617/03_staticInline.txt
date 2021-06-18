@@ -1,0 +1,5 @@
+Inline marks the symbol WEAK, which hints linker to choose arbitrary one of definition in object files.
+Static marks the symbol LOCAL, which restrict the symbol in current translation unit, and the linker may keep multiple
+instances of definition.
+static inline generally works as static, but the inline keyword suggest compiler trying to inline this function.Even if the inline substitution is omitted, the other rules(especially w.r.t One Definition Rule) for inline are followed.
+
