@@ -24,6 +24,9 @@ int main()
 }
 
 #if 0
-	
-
+	TEST CASE 1
+		Enter the number
+		2
+		cube inline function : 27
+		CUBE macro function  : 120
 #endif
