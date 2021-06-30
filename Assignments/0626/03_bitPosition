@@ -1,0 +1,24 @@
+/* Write a program as a Macro will take two arguments. 
+ * It should return the position 1 or 0.*/
+
+#include<stdio.h>
+
+#define CHECK_BIT(val, BitPosition) (val = val & BitPosition)
+
+int main()
+{
+	unsigned int hexVal = 0x23;
+
+	if(CHECK_BIT(hexVal, 0x20) == 0)
+	{
+		printf("Bit at the position in 0x%x is 0\n",hexVal );
+	}
+	else
+		printf("Bit at the position in 0x%x is 1\n",hexVal );
+
+	return 0;
+}
+
+#if 0
+	Bit at the position in 0x20 is 1
+#endif
